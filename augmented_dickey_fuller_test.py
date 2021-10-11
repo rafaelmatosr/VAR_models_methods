@@ -25,7 +25,3 @@ def adf_test(series, signif=0.05, name='', verbose=False):
     else:
         print(f" => P-Value = {p_value}. Could not reject the null hypothesis(non-stationary series).")     
 
-#Aplication to each column
-for name, column in df_train.iteritems():
-    adf_test(column, name=column.name)
-    print('\n')
